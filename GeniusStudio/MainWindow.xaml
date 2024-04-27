@@ -1,0 +1,88 @@
+﻿<Window x:Class="GeniusStudio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeniusStudio"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="1080" 
+        Width="1920" 
+        WindowStyle="None" 
+        WindowState="Maximized">
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="5*" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="4*" />
+    </Grid.ColumnDefinitions>
+    <StackPanel
+        Grid.Row="0"
+        Grid.Column="0"
+        Background="#735F32">
+        <Button
+            x:Name="BtnMenu"
+            MinWidth="110"
+            MinHeight="70"
+            Margin="20,18,20,20"
+            Click="BtnMenu_Click"
+            Content="Menu"
+            Cursor="Hand"
+            Style="{DynamicResource ResourceKey=ButtonStyle}" 
+            FontFamily="Bahnschrift" />
+        <Button
+            x:Name="BtnAddCatalog"
+            FontFamily="Bahnschrift"
+            MinWidth="110"
+            MinHeight="70"
+            Margin="20"
+            Click="BtnAddCatalog_Click"
+            Content="Add Catalog"
+            Cursor="Hand"
+            Style="{DynamicResource ResourceKey=ButtonStyle}" />
+    </StackPanel>
+    <StackPanel
+            x:Name="WrapInfo"
+            Grid.Row="0"
+            Grid.Column="1"
+            Background="#272829" Grid.RowSpan="2" />
+    <StackPanel
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2">
+    </StackPanel>
+    <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Background="#735F32">
+        <Button
+            x:Name="ReLogin"
+            MinWidth="110"
+            MinHeight="70"
+            Margin="20,0"
+            Click="ReLogin_Click"
+            Content="Relogin"
+            FontFamily="Bahnschrift"
+            Style="{DynamicResource ResourceKey=ButtonStyle}" />
+        <Button
+            x:Name="BtnExit"
+            MinWidth="110"
+            MinHeight="70"
+            Margin="20,3,20,20"
+            Click="BtnExit_Click"
+            Content="Exit"
+            IsCancel="True"
+            Style="{DynamicResource ResourceKey=ExitButtonStyle}" />
+    </StackPanel>
+    <Frame
+        x:Name="frame"
+        Grid.Row="0"
+        Grid.Column="1"
+        Margin="20,20,20,20"
+        Loaded="frame_Loaded"
+        NavigationUIVisibility="Hidden" Grid.RowSpan="2" />
+</Grid>
+    </Window>

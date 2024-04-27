@@ -1,0 +1,117 @@
+﻿<Window x:Class="GeniusStudio.Windows.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeniusStudio.Windows"
+        mc:Ignorable="d"
+        Title="Login" Height="400" Width="300" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#272829">
+    <Grid>
+        <TextBlock
+            Height="40"
+            Margin="65,59,46,0"
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift"
+            FontSize="30"
+            Foreground="#FFF6E0">
+            Registration
+        </TextBlock>
+        <Label
+            Foreground="#FFF6E0"
+            Margin="50,122,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift"
+            Target="{Binding ElementName=LoginTxt}">
+            _Логін
+        </Label>
+        <Label
+            Foreground="#FFF6E0"
+            x:Name="PassTarget"
+            Margin="50,170,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Bahnschrift"
+            Target="{Binding ElementName=Pass}">
+            _Пароль
+        </Label>
+        <TextBlock            
+            Foreground="#FFF6E0"
+            x:Name="AdminText"
+            Margin="55,223,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Visibility="Collapsed"
+            FontFamily="Bahnschrift">
+            Адмін
+        </TextBlock>
+        <TextBox
+            x:Name="LoginTxtBox"
+            Height="24"
+            Width="200"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,141,0,0"
+            Style="{DynamicResource ResourceKey=TextBoxStyle}" 
+            Foreground="#404040"
+            Padding="5 4" 
+            FontFamily="Bahnschrift"
+            />
+        <PasswordBox
+            x:Name="PasswordBox"
+            Height="24"
+            Width="200"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,190,0,0"
+            Style="{DynamicResource ResourceKey=PassBoxStyle}"  
+            Foreground="#404040"
+            Padding="5 4" 
+            FontFamily="Bahnschrift"
+            />
+        <Button
+            x:Name="RegisterBtn"
+            Height="50"
+            VerticalAlignment="Top"
+            Margin="75,284,75,0"
+            Content="Register"
+            FontFamily="Bahnschrift"
+            Style="{StaticResource ButtonStyle}" 
+            Click="RegisterBtn_Click"/>
+        <Button
+            x:Name="Return"
+            Height="25"
+            VerticalAlignment="Bottom"
+            Margin="230,0,10,330"
+            Content="Back"
+            FontFamily="Bahnschrift"
+            Style="{DynamicResource ExitButtonStyle}" 
+            Click="Back_Click"/>
+        <Button
+            x:Name="AdminBtn"
+            Height="30"
+            Width="170"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,237,0,0"
+            Content="Admin"
+            FontFamily="Bahnschrift"
+            Style="{StaticResource ButtonStyle}" 
+            Click="Admin_Click"/>
+        <PasswordBox
+            x:Name="AdminPasswordBox"
+            Height="24"
+            Width="200"
+            Style="{DynamicResource ResourceKey=PassBoxStyle}"  
+            Foreground="#404040"
+            Padding="5 4" 
+            Visibility="Collapsed"
+            FontFamily="Bahnschrift"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,237,0,0"
+            />
+    </Grid>
+</Window>

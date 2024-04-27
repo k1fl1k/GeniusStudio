@@ -1,0 +1,16 @@
+﻿<Application x:Class="GeniusStudio.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GeniusStudio"
+             StartupUri="AuthorisationWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="styles\ButtonStyle.xaml" />
+                <ResourceDictionary Source="styles\ExitStyle.xaml" />
+                <ResourceDictionary Source="styles\TextPassBoxStyle.xaml" />
+                <ResourceDictionary Source="styles\CartButton.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
