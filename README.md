@@ -51,7 +51,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any inquiries or support, please contact the authors:
 
-- k1flik: [kfruilldfu@gmail.com](mailto:kfruilldfu@gmail.com)
+- k1fl1k: [kfruilldfu@gmail.com](mailto:kfruilldfu@gmail.com)
 [c.heletii.yaroslav@student.uzhnu.edu.ua](mailto:c.heletii.yaroslav@student.uzhnu.edu.ua)
 - krnelx: [kovmak15@gmail.com](mailto:kovmak15@gmail.com)
 [c.kovrei.maksym@student.uzhnu.edu.ua](mailto:c.kovrei.maksym@student.uzhnu.edu.ua)
