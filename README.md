@@ -1,16 +1,16 @@
-#GeniusStudeo
+# GeniusStudeo
 
-##Authors: k1flik, krnelx
+## Authors: k1flik, krnelx
 
 ---
 
-##Description:
+## Description:
 
 GeniusStudio is a C# WPF application designed to showcase physical product catalogs. It provides an intuitive interface for viewing and navigating through product catalogs stored in .txt files.
 
 ---
 
-##Features:
+## Features:
 
 - **Catalog Display:** Easily view and browse through product catalogs.
 - **User-Friendly Interface:** Intuitive design for seamless navigation.
@@ -19,7 +19,7 @@ GeniusStudio is a C# WPF application designed to showcase physical product catal
 
 ---
 
-##How to Use:
+## How to Use:
 
 1. **Download:** Clone or download the repository to your local machine.
 2. **Build:** Open the project in Visual Studio or your preferred C# development environment.
@@ -28,26 +28,26 @@ GeniusStudio is a C# WPF application designed to showcase physical product catal
 
 ---
 
-##Requirements:
+## Requirements:
 
 - .NET Framework
 - Visual Studio (or any C# development environment)
 
 ---
 
-##Contributing:
+## Contributing:
 
 Contributions to GeniusStudio are welcome! Feel free to fork the repository and submit pull requests with your enhancements or bug fixes.
 
 ---
 
-##License:
+## License:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-##Contact:
+## Contact:
 
 For any inquiries or support, please contact the authors:
 
